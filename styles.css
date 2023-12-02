@@ -1,0 +1,178 @@
+.centrado {
+    text-align: center;
+  }
+  .izquierda {
+    text-align: left;
+  }
+  .derecha {
+    text-align: right;
+  }
+
+  .contenedor {
+    text-align: justify;
+  }
+  section {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  nav {
+    background-color: #5ed77a; /* Fondo */
+    color: #131313; /* Texto blanco */
+    padding: 6px 0; /* Espacio interno en la parte superior e inferior */
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center;
+}
+nav ul {
+    list-style: none; /* Elimina el estilo de marcador predeterminado */
+    padding-left: 20px; /* Añade un espacio a la izquierda para tu marcador personalizado */
+    display: flex; /* para acomodar los elementos */
+    flex-direction: row;
+    text-align: center; /*Alineación centrada */
+  
+    
+}
+
+  nav a {
+    color: #030e05; /* Color de texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin: 8px; /* Márgenes horizontales entre enlaces */
+  }
+   nav li {
+        margin-left: 4px;
+        box-shadow: 1px 1px 2px 1px rgba(59,95,30,0.65);
+        -webkit-box-shadow: 1px 1px 2px 1px rgba(59,95,30,0.65);
+        -moz-box-shadow: 1px 1px 2px 1px rgba(59,95,30,0.65);
+    }
+   nav ul li a:hover {
+        color: #eee; /* Cambia el fondo del elemento de lista al hacer hover */
+        /* Agrega otros estilos según tus preferencias */
+    }
+
+    /* Estilo para el formulario */
+form {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 3px solid #59FF43;
+  background-color: #f4f4f4;
+  font-size: 16px;
+}
+
+/* Estilo para etiquetas de formulario */
+label {
+  display: block;
+  margin-bottom: 2px;
+  color: #070505;
+}
+
+
+/* Estilo para el select */
+select {
+  width: 200px;
+  height: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid rgb(142, 234, 4);
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para las opciones del select */
+option {
+  color: #000000;
+}
+
+/* Estilo para campos de entrada de texto */
+input[type="text"], input[type="email"], select[for="animal"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  size: 16px;
+}
+
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Estilo para el botón de reset */
+input[type="reset"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Cambiar estilo cuando el cursor pasa sobre el botón */
+input[type="submit"]:hover {
+  background-color: #e6e926;
+}
+  /* Cambiar estilo cuando el cursor pasa sobre el botón */
+input[type="reset"]:hover {
+  background-color: #e6e926;
+}
+
+
+/* Agregamos position: relative; a .container */
+.container {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.container input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: #9e8f8f;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #383131;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: rgb(8, 241, 8)
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(246, 245, 245);
+}
+

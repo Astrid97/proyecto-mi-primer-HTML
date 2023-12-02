@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/icon" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Michusiano</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Quiero saber mas de vos</h1>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="alimentacion.html">Alimentacion de michis</a></li>
+          <li><a href="datos.html">Datos curiosos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <form>
+      <div>
+        <label for="nombre">¿Quien sos?: </label>
+        <input
+          type="text"
+          id="identificador"
+
+          name="nombre"
+          placeholder="ingresa tu nombre"
+          required
+        />
+
+        <label for="genero">Genero:</label>
+        <select name="genero" id="genero">
+            <option value="" selected>Seleccione</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Hombre">Malo</option>
+        </select>
+
+        <label for="mail">Email: </label>
+        <input type="email"
+          id="mail"
+          placeholder="Escribi aca tu mail bb"
+          required
+        />
+        <label for="animal"> ¿Que animal te gustaria ser?: </label>
+        <select name="animal" id="animal">
+          <option value="Gato">Gato</option>
+          <option value="Perro">Perro</option>
+          <option value="Leon">Leon</option>
+          <option value="Paloma">Paloma</option>
+          <option value="Rata">Rata</option>
+          <option value="Kirchnerista">Kirchnerista</option>
+          <option value="Delfin">Delfin</option>
+          <option value="Perezoso">Perezoso</option>
+          <option value="Colibry">Colibry</option>
+          <option value="Marmota">Marmota</option>
+          <option value="Pato" selected="selected">Pato</option>
+        </select>
+      </div>
+
+      <div>
+      <label for="Condicion"
+        >¿Aceptas ser la tia de Max por el resto de la eternidad, en la salud y en la enfermedad?</label
+      >
+      <label class="container"
+        >Si
+        <input type="radio" checked="checked" name="radio" />
+        <span class="checkmark"> </span>
+      </label>
+
+      <label class="container"
+        >No
+        <input type="radio" checked="checked" name="radio" />
+        <span class="checkmark"> </span>
+      </label>
+
+      <label class="container"
+        >Nose
+        <input type="radio" checked="checked" name="radio" />
+        <span class="checkmark"> </span>
+      </label>
+    </div>
+
+      <div>
+        <input type="submit" value="Enviar tus datos" />
+        <input type="reset" value="Resetea" />
+      </div>
+    </form>
+
+    <footer>
+      <p>Derechos reservados &copy; 2023</p>
+    </footer>
+  </body>
+</html>
